@@ -1,0 +1,16 @@
+#unity3d 
+/Library/
+/Temp/
+/Obj/
+/Build/
+/*.csproj
+/*.unityproj
+/*.sln
+/*.suo
+/*.user
+/*.userprefs
+/*.pidb
+/*.booproj
+
+.vs
+.csproj
