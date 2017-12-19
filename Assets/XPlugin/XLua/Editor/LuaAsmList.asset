@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 11500000, guid: 47296f21e99f95a4ebcb88d8612d711a, type: 3}
+  m_Name: LuaAsmList
+  m_EditorClassIdentifier: 
+  AsmList:
+  - {fileID: 11400000, guid: 8682a893cadb4c547aa4013152212cad, type: 2}
+  - {fileID: 11400000, guid: ae81de5531ec42c43b44af3d655ae7c4, type: 2}
+  - {fileID: 11400000, guid: 8096b7d80a753a94fbc55ea55240b65d, type: 2}
+  - {fileID: 11400000, guid: 76729f1270361478d842358a5204a3c6, type: 2}

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37989824d5e756443a869e2e3ad6d12a, type: 3}
+  m_Name: LuaMain
+  m_EditorClassIdentifier: 
+  SrcDir: {fileID: 102900000, guid: cf64986bcb6f9f34a82c8d85932c26f9, type: 3}
+  OutDir: {fileID: 102900000, guid: cb4e072fab64c62488672311d5990048, type: 3}
+  Namespace: 
+  DependList: []
+  Files:
+  - {fileID: 4900000, guid: 307fc624895f80243afa4ae20e319bb9, type: 3}
+  - {fileID: 4900000, guid: bba5109589a68514aa50c542c088a88b, type: 3}
+  - {fileID: 4900000, guid: b0217d94b6d4e6649be7db7524986ad0, type: 3}
+  - {fileID: 4900000, guid: 3fa60704d49f9df44bbc85b161231641, type: 3}
+  - {fileID: 4900000, guid: a250bb84f86e84946bea7a041f40d553, type: 3}
+  - {fileID: 4900000, guid: 4dc438ba872912648abfbee326a14ca7, type: 3}
+  - {fileID: 4900000, guid: bbd2eb103e1d6c947890f2ac8361f6c2, type: 3}
