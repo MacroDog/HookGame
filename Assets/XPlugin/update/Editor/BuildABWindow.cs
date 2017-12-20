@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEditor;
 using Object = UnityEngine.Object;
-using XPlugin.UI;
+//using XPlugin.UI;
 
 namespace XPlugin.Update {
 
@@ -41,18 +41,18 @@ namespace XPlugin.Update {
 
 			if (GUILayout.Button("构建")) {
 				foreach (var o in ToBuildCompressed) {
-					beforeBuild(o);
+					//beforeBuild(o);
 					bool result = BuildAssetBundle.SimpleBuild(o, true);
-					afterBuild(o);
+					//afterBuild(o);
 					if (!result) {
 						EditorUtility.DisplayDialog("error", "构建Bundle时出错:" + o, "ok");
 						return;
 					}
 				}
 				foreach (var o in ToBuildNoCompressed) {
-					beforeBuild(o);
+					//beforeBuild(o);
 					bool result = BuildAssetBundle.SimpleBuild(o, false);
-					afterBuild(o);
+					//afterBuild(o);
 					if (!result) {
 						EditorUtility.DisplayDialog("error", "构建Bundle时出错:" + o, "ok");
 						return;
@@ -62,18 +62,18 @@ namespace XPlugin.Update {
 			}
 		}
 
-		protected void beforeBuild(Object obj) {
-			string path = AssetDatabase.GetAssetPath(obj);
-			if (path.Contains("_MenuUI/Resources/UI/")) {
-				UIUpdateUtil.RecordRecursive((obj as GameObject));
-			}
-		}
+		//protected void beforeBuild(Object obj) {
+		//	string path = AssetDatabase.GetAssetPath(obj);
+		//	if (path.Contains("_MenuUI/Resources/UI/")) {
+		//		UIUpdateUtil.RecordRecursive((obj as GameObject));
+		//	}
+		//}
 
-		protected void afterBuild(Object obj) {
-			string path = AssetDatabase.GetAssetPath(obj);
-			if (path.Contains("_MenuUI/Resources/UI/")) {
-				UIUpdateUtil.ReassignRecursive((obj as GameObject));
-			}
-		}
+		//protected void afterBuild(Object obj) {
+		//	string path = AssetDatabase.GetAssetPath(obj);
+		//	if (path.Contains("_MenuUI/Resources/UI/")) {
+		//		UIUpdateUtil.ReassignRecursive((obj as GameObject));
+		//	}
+		//}
 	}
 }
